@@ -76,7 +76,8 @@ std = ["alloc"]
 trust_anchor_util = ["std"]
 
 [dependencies]
-ring = { version = "0.16.19", default-features = false }
+# ring = { version = "0.16.19", default-features = false }
+ring = { default-features = false, git = "https://github.com/esamudera/ring.git", branch = "disable_eaed_hash_check" }
 untrusted = "0.7.1"
 
 [dev-dependencies]
